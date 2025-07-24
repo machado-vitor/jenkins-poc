@@ -1,0 +1,9 @@
+workflow-aggregator:2.10
+pipeline-stage-view:2.33
+git:5.2.0
+docker-workflow:1.33
+credentials-binding:3.2.0
+sbt:1.5
+junit:1325.v30d03c644a_z0
+mailer:448.v5b_97805e3767
+matrix-auth:3.1.8
