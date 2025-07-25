@@ -1,9 +1,3 @@
-# Jenkins on Docker
-# Jenkins Docker Setup
-# Flask Demo App with Jenkins Pipeline
-
-## Overview
-
 This project demonstrates a simple Jenkins CI/CD pipeline that:
 
 ## Jenkins Setup
