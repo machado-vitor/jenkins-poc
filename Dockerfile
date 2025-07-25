@@ -17,9 +17,14 @@ RUN apt-get update && \
     apt-get update && \
     apt-get -y install docker-ce-cli
 
+# Install wget and add Amazon Corretto repository
+RUN apt-get -y install wget && \
+    wget -O - https://apt.corretto.aws/corretto.key | gpg --dearmor -o /usr/share/keyrings/corretto-keyring.gpg && \
+    echo "deb [signed-by=/usr/share/keyrings/corretto-keyring.gpg] https://apt.corretto.aws stable main" | tee /etc/apt/sources.list.d/corretto.list
+
 # Install dependencies for building Scala projects
 RUN apt-get update && \
-    apt-get install -y openjdk-17-jdk curl && \
+    apt-get install -y java-24-amazon-corretto-jdk curl && \
     rm -rf /var/lib/apt/lists/*
 
 # Switch back to jenkins user

@@ -11,4 +11,4 @@ def status():
     return jsonify({'status': 'OK', 'service': 'Flask Demo App'})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
