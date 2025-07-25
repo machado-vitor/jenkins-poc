@@ -1,1 +1,27 @@
-/.idea/
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python virtual environments (since you use a Python SDK)
+venv/
+.env/
+
+# Build output
+out/
+build/
+dist/
+
+# Dependency files (Python-related)
+__pycache__/
+*.pyc
+*.pyo
+
+# Misc
+*.swp  # Swap files from editors
