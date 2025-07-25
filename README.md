@@ -105,20 +105,6 @@ docker-compose up -d
 
 3. Access Jenkins at http://localhost:8080
 
-## Initial Password
-
-Jenkins setup wizard is disabled by default, but you can still find the initial admin password in the logs:
-
-```bash
-docker-compose logs jenkins | grep -A 2 "initialAdminPassword"
-```
-
-Alternatively, you can get it directly from the container:
-
-```bash
-docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
-```
-
 ## Configure Jenkins for Scala/Java Projects
 
 1. Create a new Pipeline job

@@ -27,6 +27,10 @@ RUN apt-get update && \
     apt-get install -y java-24-amazon-corretto-jdk curl && \
     rm -rf /var/lib/apt/lists/*
 
+# Create docker group and add jenkins user to it
+RUN groupadd -f docker && \
+    usermod -aG docker jenkins
+
 # Switch back to jenkins user
 USER jenkins
 

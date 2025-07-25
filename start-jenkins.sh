@@ -16,7 +16,4 @@ for i in {1..12}; do
   sleep 5
 done
 
-echo "🔑 Jenkins initial admin password:"
-docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword 2>/dev/null || echo "Password not available yet. Try again in a minute with: docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword"
-
 echo "✅ Jenkins is running at http://localhost:8080"
